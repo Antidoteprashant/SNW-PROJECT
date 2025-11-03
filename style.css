@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    width: 583;
+    height: 52;
+    top: 46px;
+    left: 498px;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    gap: 24px;
+    background: #191818;
+    opacity: 1;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    list-style: none;
+}
+.nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+}
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 25px 60px;
+    margin: 0;
+}
+.section2 {
+    background-image: url("demo7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;      
+    background-position: center;  
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap');
+
+.intro-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 60px 100px;
+  background-color: #000;
+}
+
+.intro-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.intro-text h2 {
+  font-family: 'Bebas Neue', cursive;
+  color: #ff2e2e;
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  line-height: 1.6;
+  font-size: 20px;
+  color: #e5e5e5;
+  margin-bottom: 20px;
+}
+.intro-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.intro-image img {
+  width: 80%;
+  max-width: 400px;
+  object-fit: contain;
+}
+.cards{
+    width: 237.05661010742188;
+    height: 349;
+    opacity: 1;
+    border-radius: 13.17px;
+    background-color: #000;
+}
+.cards image{
+  width: 237.05661010742188;
+  height: 349;
+  opacity: 1;
+  border-radius: 13.17px;
+}
+
+
+
+
+
