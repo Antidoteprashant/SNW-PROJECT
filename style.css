@@ -48,7 +48,6 @@ header{
     height: 100vh;
     background-attachment: fixed;
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap');
 
 .intro-section {
   display: flex;
@@ -102,6 +101,89 @@ header{
   height: 349;
   opacity: 1;
   border-radius: 13.17px;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+  height: 400px;
+  margin: 50px auto;
+  justify-content: center;
+            }
+
+.card {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: flex 0.7s ease, filter 0.7s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  flex: 2.5;
+  filter: brightness(1.1);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 30px 20px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+
+}
+
+.card:hover .card-content {
+  opacity: 1;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card1 {
+    background-image: url('katana1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+}
+.card2 {
+    background-image:  url('katana2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+}
+.card3 {
+    background-image: url('katana3.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+}
+
+.card4 {
+    background-image: url('katana4.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
 }
 
 
