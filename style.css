@@ -102,6 +102,11 @@ header{
   opacity: 1;
   border-radius: 13.17px;
 }
+
+body {
+  background:black;
+}
+
 .container {
   display: flex;
   gap: 20px;
@@ -110,7 +115,7 @@ header{
   height: 400px;
   margin: 50px auto;
   justify-content: center;
-            }
+}
 
 .card {
   flex: 1;
@@ -183,10 +188,8 @@ header{
     background-size: cover;
     background-position: center;
     width: 400px;
-    height: 400px;
-}
-
-
+    height: 400px;}
+  
 
 
 
