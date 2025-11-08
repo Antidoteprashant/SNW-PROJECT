@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    width: 583;
+    height: 52;
+    top: 46px;
+    left: 498px;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    gap: 24px;
+    background: #191818;
+    opacity: 1;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    list-style: none;
+}
+.nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+}
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 25px 60px;
+    margin: 0;
+}
+body {
+      height: 100vh;
+      background: url('watch88.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+}
