@@ -105,6 +105,7 @@ header{
 
 body {
   background:black;
+  font-family: 'Georgia', serif;
 }
 
 .container {
@@ -194,4 +195,107 @@ body {
   color: #fff;
   font-size: 40px;
   text-align: center;
+}
+footer {
+  background-color: #000;
+  color: #ccc;
+  padding: 30px 20px;
+  margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-left h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-left p {
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+        
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: left;
+}
+
+.footer-center a {
+  font-size: 1.2em;
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+.footer-center a:hover {
+  color: #fff;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right h3 {
+  font-size: 1.1em;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.social-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+ @media (max-width: 768px) {
+.footer-container {
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-right {
+  text-align: left;
+}
+
+.social-links {
+  justify-content: flex-start;
+}
+}
+
+
+footer {
+  width: 100%;
+  margin-top: 0;
+}
+
+  .footer-left h1 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.footer-center a, .footer-right h3 {
+  font-weight: 600;
+  text-transform: uppercase;
 }

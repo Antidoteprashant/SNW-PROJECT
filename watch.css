@@ -1,47 +1,164 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-header{
-    width: 583;
-    height: 52;
-    top: 46px;
-    left: 498px;
-    padding-top: 16px;
-    padding-right: 24px;
-    padding-bottom: 16px;
-    padding-left: 24px;
-    gap: 24px;
-    background: #191818;
-    opacity: 1;
+
+html {
+  height: 100%;
+  background: url('watch88.gif') no-repeat center center fixed;
+  background-size: cover;
 }
-.nav-bar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    list-style: none;
-}
-.nav-links a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-}
-.nav-links ul {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    padding: 25px 60px;
-    margin: 0;
-}
+
 body {
-      height: 100vh;
-      background: url('watch88.gif') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Georgia', serif;
+  color: white;
+  background: transparent; 
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background: #191818;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 16px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  list-style: none;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1e90ff;
+}
+
+section, h1 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  color: blue;
+  margin-top: 100px;
+}
+
+p {
+  color: black;
+}
+
+footer {
+  background-color: #000;
+  color: #ccc;
+  padding: 30px 20px; 
+  margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left h1 {
+  font-size: 1.8em; 
+  font-weight: 300;
+  color: #fff;
+}
+
+.footer-left p {
+  font-size: 0.8em;
+  letter-spacing: 0.5px;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.footer-center a {
+  font-size: 1em;
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.footer-center a:hover {
+  color: #fff;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right h3 {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.social-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
 }
